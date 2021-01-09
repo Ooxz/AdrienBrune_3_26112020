@@ -4,7 +4,8 @@
   "description": "project 3 openclassrooms ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/import.scss"
+    "dev": "parcel AdrienBrune_3_26112020/homepage.html",
+    "build": "parcel build AdrienBrune_3_26112020/homepage.html"
   },
   "repository": {
     "type": "git",
