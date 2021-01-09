@@ -1,0 +1,19 @@
+{
+  "name": "adrienbrune_3_26112020",
+  "version": "1.0.0",
+  "description": "project 3 openclassrooms ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/import.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ooxz/AdrienBrune_3_26112020.git"
+  },
+  "author": "Adrien Brune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ooxz/AdrienBrune_3_26112020/issues"
+  },
+  "homepage": "https://github.com/Ooxz/AdrienBrune_3_26112020#readme"
+}
