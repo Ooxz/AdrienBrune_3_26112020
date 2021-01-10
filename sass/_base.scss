@@ -6,14 +6,7 @@ $color-tertiary: #99E2D0;
 $appPadding: 1rem;
 
 html{
-    margin: 5vw;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: pink;
 }
 
-.stepsPick {
-    background-color: blue;
-    .stepsText {
-        background-color: red;
-    }
-}

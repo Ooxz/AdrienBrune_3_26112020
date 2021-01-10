@@ -1,16 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @use "sass:color";
 html {
-  margin: 5vw;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: pink;
-}
-
-.stepsPick {
-  background-color: blue;
-}
-
-.stepsPick .stepsText {
-  background-color: red;
 }
 /*# sourceMappingURL=import.css.map */
