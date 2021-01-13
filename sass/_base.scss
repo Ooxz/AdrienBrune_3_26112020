@@ -1,12 +1,88 @@
-@use "sass:color";
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$appPadding: 1rem;
+$Padding: 1rem;
+
+@mixin button{
+    border: none;
+    border-radius: 95px;
+    font-size: 1rem;
+    font-weight: 450;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    background-color: rgb(110, 110, 110);
+    background: linear-gradient($color-primary,$color-secondary);
+    transition-duration: 0.2s;
+    box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+        background-color: white;
+        box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+}
 
 html{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header{
+     position: relative;
+     padding: $Padding;
+  
+  &__Logo{
+    text-align: center;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+  }
+}
+.container{
+    margin: auto;
+    position: relative;
+    max-width: 1100px;
+}
+.footer{
+background-color: rgba(0, 0, 0, 0.829);
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: $Padding;
+    color: white;
+}
+&__Title{
+    font-family: "Shrikhand";
+    margin: 0;
+    margin-bottom: $Padding;
+    font-size: 1.3rem;
+}
+&__Nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+&__Links{
+    margin: 0.6vw 0;
+
+    &:first-child {
+        margin-top: 0;
+}
+}
+&__Link:hover{
+    text-decoration: underline;
+}
+&__Icon1{
+    margin-right: 1vw;
+}
+&__Icon2{
+    margin-right: 0.6vw;
+}
 }
 
