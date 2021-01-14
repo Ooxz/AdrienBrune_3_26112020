@@ -74,4 +74,69 @@ a {
 .footer__Icon2 {
   margin-right: 0.6vw;
 }
+
+.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f0f0f0;
+  padding: 1.5vw;
+}
+
+.area__Icon {
+  margin-right: 1vw;
+}
+
+.area__Text {
+  font-weight: 450;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f8f8;
+}
+
+.explore__Title {
+  margin: 0;
+}
+
+.explore__Subtitle {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 350;
+}
+
+.explore__Button {
+  border: none;
+  border-radius: 95px;
+  font-size: 1rem;
+  font-weight: 450;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  background-color: #6e6e6e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.explore__Button:hover {
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
+}
 /*# sourceMappingURL=import.css.map */

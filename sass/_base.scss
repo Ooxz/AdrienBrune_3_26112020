@@ -4,7 +4,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $Padding: 1rem;
 
-@mixin button{
+@mixin button($color){
     border: none;
     border-radius: 95px;
     font-size: 1rem;
@@ -14,11 +14,10 @@ $Padding: 1rem;
     background-color: rgb(110, 110, 110);
     background: linear-gradient($color-primary,$color-secondary);
     transition-duration: 0.2s;
-    box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, 0.2);
     
     &:hover {
         background-color: white;
-        box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
     }
 }
 
