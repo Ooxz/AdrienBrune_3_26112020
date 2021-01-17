@@ -178,16 +178,8 @@ a {
   background-color: rgba(147, 86, 220, 0.2);
 }
 
-.steps__Pick:hover__Icon__pick:hover {
-  color: rgba(147, 86, 220, 0.2);
-}
-
 .steps__Icon {
   margin-right: 1rem;
-}
-
-.steps__Icon:hover {
-  color: rgba(147, 86, 220, 0.2);
 }
 
 .steps__digit {

@@ -58,13 +58,10 @@
     &__Pick:hover{
         background-color: rgba($color: #9356DC, $alpha: 0.2);
         }
-    }
     &__Icon{
         margin-right: 1rem;
     }
-    &__Icon:hover{
-        color: rgba($color: #9356DC, $alpha: 0.2);
-    }
+    
     &__digit{
         background: $color-primary;
       height: 1.5rem;
