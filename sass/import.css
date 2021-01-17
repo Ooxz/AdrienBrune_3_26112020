@@ -106,7 +106,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem 3rem 3rem 4rem;
   background-color: #f8f8f8;
 }
 
@@ -138,5 +138,61 @@ a {
   background-color: white;
   -webkit-box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
           box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+}
+
+.steps__Title {
+  margin-top: 0;
+}
+
+.steps__Picks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.steps__Pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem 5rem 1rem 0.7rem;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
+          box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
+  border-radius: 1.3rem;
+  background-color: #f1f1f1;
+}
+
+.steps__Icon {
+  margin-right: 1rem;
+}
+
+.steps__digit {
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.000005rem;
 }
 /*# sourceMappingURL=import.css.map */
