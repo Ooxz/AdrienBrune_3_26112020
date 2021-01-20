@@ -106,7 +106,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 2rem 3rem 3rem 4rem;
+  padding: 2rem 3rem 3rem 3rem;
   background-color: #f8f8f8;
 }
 
