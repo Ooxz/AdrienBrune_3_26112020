@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu "La palette du goût" - ohmyfood!</title>
         <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./sass/import.scss">
+        <link rel="stylesheet" href="./sass/import.css">
     </head>
 
     <body>
@@ -16,19 +16,20 @@
             </div>
         </header>
         <img src="./Maquettes_Ohmyfood/Maquettes__Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-        alt="" class="heroImg">
+        alt="" class="headerImg">
 
         <main class="menu">
-            <header class="menu_Header">
+            <header class="menu__Header">
                 <h2 class="menu__Title">La palette du goût</h2>
                 <button class="menu__Button">
-                    <i class="menu-Heart fas fa-heart"></i>
+                    <i class="menu__Heart menu__Heart--noBg fas fa-heart fa-2x"></i>
+                    <i class="menu__Heart menu__Heart--bg fas fa-heart fa-2x"></i>
                 </button>
             </header>
             
             <div class="mealsmain">
                 <section class="meals">
-                    <h3 class="meals_Title">Entrées</h3>
+                    <h3 class="meals__Title">Entrées</h3>
                     <section class="item">
                         <header class="item__Header">
                         <h4 class="item__Title">Fricassée d'escargot</h4>
@@ -70,7 +71,7 @@
                 </section>
 
                 <section class="meals">
-                    <h3 class="meals_Title">Plats</h3>
+                    <h3 class="meals__Title">Plats</h3>
                     <section class="item">
                         <header class="item__Header">
                         <h4 class="item__Title">Filet de boeuf aux herbes</h4>
@@ -109,9 +110,10 @@
                         </div>
                     </div>
                     </section>
+                </section>
 
                     <section class="meals">
-                        <h3 class="meals_Title">Desserts</h3>
+                        <h3 class="meals__Title">Desserts</h3>
                         <section class="item">
                             <header class="item__Header">
                             <h4 class="item__Title">Paris Brest</h4>
@@ -124,7 +126,6 @@
                             </div>
                         </div>
                         </section>
-                    </section>
 
                         <section class="item">
                             <header class="item__Header">

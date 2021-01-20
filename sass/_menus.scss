@@ -1,0 +1,169 @@
+.header {
+      position: relative;
+  
+    &__Arrow {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position: absolute;
+      left: 2rem;
+      height: 2rem;
+      width: 2rem;
+      top: 1.4rem;
+      font-size: 1.2rem;
+    }
+  }
+  .headerImg{
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+  }
+
+  .menu{
+      border-radius: 2rem 2rem 0rem 0rem;
+      background-color: #f1f1f1;
+      margin-top: -4rem;
+      z-index: 1;
+      position: relative;
+
+      &__Header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 2rem 0rem 1rem;
+      }
+      &__Title{
+        font-family: "Shrikhand";
+      }
+
+      &__Button {
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        border: transparent 0px solid;
+        padding: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+        
+        &:hover::before {
+          opacity: 1;
+        }
+        
+        &::before {
+          opacity: 0;
+          transition: 0.5s;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+        }
+    }
+    
+        &__Heart {
+            transition-duration: .25s;
+            background-color: #f1f1f1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            mix-blend-mode: lighten;
+          }
+        
+          &__Button:hover {
+            .menu__Hearth {
+                &--noBg {
+                opacity: 0;
+                }
+              }
+    }
+}
+
+.mealsmain{
+    display: flex;
+    flex-direction: column;
+}
+
+.meals{
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0 1rem;
+
+    &__Title{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: normal;
+    }
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    max-width: 100%;
+
+    &__Header{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__Title{
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__Description{
+        margin: 0;
+        margin-top: 0.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__Price{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+    &__Check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        margin: -1rem 0rem -1rem 1rem;
+        background-color: $color-tertiary;
+    }
+    &__Checkicon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 100%;
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    &__Icon{
+        color: $color-tertiary;
+    }
+}
+
+
