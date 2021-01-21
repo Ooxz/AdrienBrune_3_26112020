@@ -1,20 +1,24 @@
 .header {
       position: relative;
+      margin-top: auto;
+
+      &__Logo{
+          margin-bottom: -0.5rem;
+      }
   
     &__Arrow {
       display:flex;
       align-items:center;
       justify-content:center;
       position: absolute;
-      left: 2rem;
-      height: 2rem;
+      left: 1rem;
       width: 2rem;
       top: 1.4rem;
+      height: 2rem;
       font-size: 1.2rem;
     }
   }
   .headerImg{
-      width: 100%;
       max-width: 100%;
       object-fit: cover;
   }
@@ -148,8 +152,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 3rem;
-        margin: -1rem 0rem -1rem 1rem;
+        width: 4rem;
+        margin: -1rem -5rem -1rem 1rem;
         background-color: $color-tertiary;
     }
     &__Checkicon{
@@ -164,6 +168,19 @@
     &__Icon{
         color: $color-tertiary;
     }
+    &:hover &__Check{
+        margin-right: -1rem;
+    }
 }
 
 
+.BtnMain{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 3rem 1rem;
+
+    &__Command{
+        @include button(primary);
+        cursor: pointer;
+    }
+}
