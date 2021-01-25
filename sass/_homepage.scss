@@ -1,3 +1,7 @@
+body, html{
+    margin: 0;
+}
+
 .area{
     display: flex;
     justify-content: center;
@@ -5,7 +9,7 @@
     padding: 1.5vw;
     
     &__Icon{
-        margin-right: 1vw;
+        margin-right: 1rem;
     }
     &__Text{
         font-weight: 450;
@@ -57,7 +61,12 @@
     }
     &__Pick:hover{
         background-color: rgba($color: #9356DC, $alpha: 0.2);
+        .steps__Icon{
+            color: #9356DC;
         }
+        }
+        
+        
     &__Icon{
         margin-right: 1rem;
     }
@@ -133,7 +142,7 @@
     &__Subtitle{
     margin-top: 0;
     }
-    &__btn {
+    &__Button {
         height: 2rem;
         width: 2rem;
         background-color: transparent;
@@ -143,10 +152,14 @@
         align-items:center;
         justify-content:center;
       }
-    &__Heart{
-        
+    
+      &__Heart {
+        text-shadow: 0 0 2px #000;
+        color: white;
+
+        &__Heart:hover {
+            background-color: #9356DC;
+            background: linear-gradient($color-primary,$color-secondary);
+        }
+      }
     }
-    &__Heart:hover{
-        color: $color-secondary;
-    }
-}

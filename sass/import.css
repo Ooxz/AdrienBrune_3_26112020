@@ -75,6 +75,10 @@ a {
   margin-right: 0.6vw;
 }
 
+body, html {
+  margin: 0;
+}
+
 .area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +91,7 @@ a {
 }
 
 .area__Icon {
-  margin-right: 1vw;
+  margin-right: 1rem;
 }
 
 .area__Text {
@@ -176,6 +180,10 @@ a {
 
 .steps__Pick:hover {
   background-color: rgba(147, 86, 220, 0.2);
+}
+
+.steps__Pick:hover .steps__Icon {
+  color: #9356DC;
 }
 
 .steps__Icon {
@@ -278,7 +286,7 @@ a {
   margin-top: 0;
 }
 
-.card__btn {
+.card__Button {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
@@ -295,8 +303,15 @@ a {
           justify-content: center;
 }
 
-.card__Heart:hover {
-  color: #FF79DA;
+.card__Heart {
+  text-shadow: 0 0 2px #000;
+  color: white;
+}
+
+.card__Heart__Heart:hover {
+  background-color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 .header {
