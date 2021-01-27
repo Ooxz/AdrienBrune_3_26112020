@@ -43,7 +43,6 @@
       &__Button {
         height: 2rem;
         width: 2rem;
-        background-color: transparent;
         border: transparent 0px solid;
         padding: 0;
         display:flex;
@@ -62,8 +61,6 @@
           transition: 0.5s;
           content: "";
           position: absolute;
-          top: 0;
-          left: 0;
           height: 100%;
           width: 100%;
           background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
@@ -85,7 +82,7 @@
           }
         
           &__Button:hover {
-            .menu__Hearth {
+            .menu__Heart {
                 &--noBg {
                 opacity: 0;
                 }
@@ -102,7 +99,6 @@
     overflow: hidden;
     max-width: 100%;
     padding: 0 1rem;
-
     &__Title{
     text-transform: uppercase;
     position: relative;
@@ -120,6 +116,7 @@
     border-radius: 0.7rem;
     padding: 1rem;
     max-width: 100%;
+    cursor: pointer;
 
     &__Header{
         white-space: nowrap;
@@ -178,7 +175,7 @@
 .BtnMain{
     display: flex;
     justify-content: center;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 2rem 1rem 4rem 1rem;
 
     &__Command{
         @include button(primary);

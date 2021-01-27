@@ -86,8 +86,11 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f0f0f0;
-  padding: 1.5vw;
+  padding: 0;
 }
 
 .area__Icon {
@@ -289,7 +292,6 @@ body, html {
 .card__Button {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   border: transparent 0px solid;
   padding: 0;
   display: -webkit-box;
@@ -301,19 +303,11 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 1rem;
 }
 
 .card__Heart {
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  color: white;
-}
-
-.card__Heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-color: white !important;
 }
 
 .header {
@@ -377,7 +371,6 @@ body, html {
 .menu__Button {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   border: transparent 0px solid;
   padding: 0;
   display: -webkit-box;
@@ -404,8 +397,6 @@ body, html {
   transition: 0.5s;
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
@@ -433,7 +424,7 @@ body, html {
   mix-blend-mode: lighten;
 }
 
-.menu__Button:hover .menu__Hearth--noBg {
+.menu__Button:hover .menu__Heart--noBg {
   opacity: 0;
 }
 
@@ -473,6 +464,7 @@ body, html {
   border-radius: 0.7rem;
   padding: 1rem;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .item__Header {
@@ -561,7 +553,7 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 2rem 1rem 4rem 1rem;
 }
 
 .BtnMain__Command {

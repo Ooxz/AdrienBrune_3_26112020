@@ -5,8 +5,9 @@ body, html{
 .area{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(240, 240, 240);
-    padding: 1.5vw;
+    padding: 0;
     
     &__Icon{
         margin-right: 1rem;
@@ -145,26 +146,14 @@ body, html{
     &__Button {
         height: 2rem;
         width: 2rem;
-        background-color: transparent;
         border: transparent 0px solid;
         padding: 0;
         display:flex;
         align-items:center;
         justify-content:center;
-      }
-    
-      &__Heart {
-        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-        color: white;
-
-        &:hover {    
-    	background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
-        background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
-        background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-       -webkit-text-fill-color:transparent;
-        }
-      }
+        margin-right: 1rem;
+    }
+        &__Heart{ 
+            background-color: white!important;
+    }
     }
