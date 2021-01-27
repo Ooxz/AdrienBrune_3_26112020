@@ -304,14 +304,16 @@ body, html {
 }
 
 .card__Heart {
-  text-shadow: 0 0 2px #000;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: white;
 }
 
-.card__Heart__Heart:hover {
-  background-color: #9356DC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+.card__Heart:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e72c83), to(#a742c6));
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header {
@@ -548,6 +550,8 @@ body, html {
 
 .item:hover .item__Check {
   margin-right: -1rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .BtnMain {
