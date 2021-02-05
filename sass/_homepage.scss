@@ -1,4 +1,4 @@
-.pop{
+ .pop{
   z-index: 1;
   position: fixed;
   bottom: 0;
@@ -7,17 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.90);
   opacity: 0;
   max-height: 0;
   animation: load 3s linear;
 }
 .spinner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   height:60px;
   width:60px;
-  margin:0px auto;
   -webkit-animation: rotation .6s infinite linear;
   -moz-animation: rotation .6s infinite linear;
   -o-animation: rotation .6s infinite linear;

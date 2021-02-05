@@ -113,6 +113,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   max-height: 0;
   -webkit-animation: load 3s linear;
@@ -120,12 +121,8 @@ a {
 }
 
 .spinner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   height: 60px;
   width: 60px;
-  margin: 0px auto;
   -webkit-animation: rotation .6s infinite linear;
   animation: rotation .6s infinite linear;
   border-left: 6px solid #ff79da;
