@@ -10,3 +10,17 @@
     opacity: 0;
   }
 }
+
+@keyframes slideup {
+  from {
+    margin-top: 0%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
