@@ -1,15 +1,12 @@
-body {
+/*body {
     animation-duration: 5s;
     animation-name: slideup;
-  }
+  }*/
+  
 
 .header {
       position: relative;
-      margin-top: auto;
-
-      &__Logo{
-          margin-bottom: -0.5rem;
-      }
+      margin-top: auto;   
   
     &__Arrow {
       display:flex;
@@ -31,7 +28,7 @@ body {
   .menu{
       border-radius: 2rem 2rem 0rem 0rem;
       background-color: #f1f1f1;
-      margin-top: -4rem;
+      margin-top: -4rem; //superposition d'image
       z-index: 1;
       position: relative;
 
@@ -95,11 +92,24 @@ body {
     }
 }
 
-.mealsmain{
+.mealsMain{
     display: flex;
     flex-direction: column;
+    animation: appear 1s ease;
+    @for $i from 0 to 10 {
+    &:nth-child(#{$i}) {animation-duration: $i * 1s; }
+    }
 }
-
+section{
+    position: relative;
+    animation: appear 2s linear;
+}
+.mainCourses{
+    animation: appear 4s;
+}
+.desserts{
+    animation: appear 5s;
+}
 .meals{
     overflow: hidden;
     max-width: 100%;
@@ -122,6 +132,7 @@ body {
     padding: 1rem;
     max-width: 100%;
     cursor: pointer;
+
 
     &__Header{
         white-space: nowrap;
@@ -157,11 +168,13 @@ body {
         width: 4rem;
         margin: -1rem -5rem -1rem 1rem;
         background-color: $color-tertiary;
+        transition-duration: 0.5s;
     }
     &__Checkicon{
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: rotate(0);
         background-color: white;
         border-radius: 100%;
         height: 1.4rem;
@@ -169,6 +182,12 @@ body {
     }
     &__Icon{
         color: $color-tertiary;
+    }
+
+    &:hover &__Checkicon{
+        transform: rotate(360deg);
+        transition-duration: 0.5s;
+        
     }
     &:hover &__Check{
         margin-right: -1rem;

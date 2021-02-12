@@ -11,16 +11,12 @@
   }
 }
 
-@keyframes slideup {
-  from {
-    margin-top: 0%;
-    width: 100%;
-    opacity: 0;
+@keyframes appear {
+  0%, 100% {
+    opacity: 1;
   }
 
-  to {
-    margin-top: 0%;
-    width: 100%;
-    opacity: 1;
+  0%, 30% {
+    opacity: 0;
   }
 }

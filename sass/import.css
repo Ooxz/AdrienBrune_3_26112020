@@ -22,29 +22,21 @@
   }
 }
 
-@-webkit-keyframes slideup {
-  from {
-    margin-top: 0%;
-    width: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    width: 100%;
+@-webkit-keyframes appear {
+  0%, 100% {
     opacity: 1;
+  }
+  0%, 30% {
+    opacity: 0;
   }
 }
 
-@keyframes slideup {
-  from {
-    margin-top: 0%;
-    width: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    width: 100%;
+@keyframes appear {
+  0%, 100% {
     opacity: 1;
+  }
+  0%, 30% {
+    opacity: 0;
   }
 }
 
@@ -413,20 +405,13 @@ body, html {
   background-color: white !important;
 }
 
-body {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-}
-
+/*body {
+    animation-duration: 5s;
+    animation-name: slideup;
+  }*/
 .header {
   position: relative;
   margin-top: auto;
-}
-
-.header__Logo {
-  margin-bottom: -0.5rem;
 }
 
 .header__Arrow {
@@ -538,7 +523,7 @@ body {
   opacity: 0;
 }
 
-.mealsmain {
+.mealsMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,6 +531,74 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: appear 1s ease;
+          animation: appear 1s ease;
+}
+
+.mealsMain:nth-child(0) {
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+}
+
+.mealsMain:nth-child(1) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.mealsMain:nth-child(2) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.mealsMain:nth-child(3) {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.mealsMain:nth-child(4) {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.mealsMain:nth-child(5) {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.mealsMain:nth-child(6) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.mealsMain:nth-child(7) {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.mealsMain:nth-child(8) {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.mealsMain:nth-child(9) {
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+
+section {
+  position: relative;
+  -webkit-animation: appear 2s linear;
+          animation: appear 2s linear;
+}
+
+.mainCourses {
+  -webkit-animation: appear 4s;
+          animation: appear 4s;
+}
+
+.desserts {
+  -webkit-animation: appear 5s;
+          animation: appear 5s;
 }
 
 .meals {
@@ -628,6 +681,8 @@ body {
   width: 4rem;
   margin: -1rem -5rem -1rem 1rem;
   background-color: #99E2D0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .item__Checkicon {
@@ -640,6 +695,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
   background-color: white;
   border-radius: 100%;
   height: 1.4rem;
@@ -648,6 +705,13 @@ body {
 
 .item__Icon {
   color: #99E2D0;
+}
+
+.item:hover .item__Checkicon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .item:hover .item__Check {
