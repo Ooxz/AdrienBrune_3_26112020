@@ -64,7 +64,6 @@ a {
 .container {
   margin: auto;
   position: relative;
-  max-width: 1100px;
 }
 
 .footer {
@@ -222,6 +221,16 @@ body, html {
   font-weight: 350;
 }
 
+.explore__Btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
 .explore__Button {
   border: none;
   border-radius: 95px;
@@ -242,38 +251,34 @@ body, html {
           box-shadow: 10px 10px 2px 0.1px rgba(0, 0, 0, 0.3);
 }
 
-.steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0rem;
-}
-
 .steps__Title {
-  margin-top: 0;
+  margin-left: 1.5rem;
+  margin-bottom: auto;
 }
 
 .steps__Picks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: 0;
-  margin: 0;
   list-style: none;
   cursor: pointer;
 }
 
 .steps__Pick {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 75%;
   padding: 2rem;
-  margin: 1rem 5rem 1rem 0.7rem;
+  margin: 1rem 1.5rem 1rem 1.5rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
           box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
   border-radius: 1.3rem;
   background-color: #f1f1f1;
+  position: relative;
 }
 
 .steps__Pick:hover {
@@ -304,7 +309,7 @@ body, html {
           align-items: center;
   color: white;
   position: absolute;
-  left: -0.000005rem;
+  left: -10px;
 }
 
 .restaurants {
@@ -403,6 +408,23 @@ body, html {
 
 .card__Heart {
   background-color: white !important;
+}
+
+@media (min-width: 1027px) {
+  .steps__Picks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .steps__Pick {
+    padding: 2rem 5rem 2rem 5rem;
+  }
 }
 
 /*body {
@@ -718,6 +740,10 @@ section {
   margin-right: -1rem;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+}
+
+.container {
+  margin-left: 0;
 }
 
 .BtnMain {

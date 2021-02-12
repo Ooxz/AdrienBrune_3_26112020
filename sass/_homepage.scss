@@ -77,33 +77,38 @@ body, html{
         margin-bottom: 3rem;
         font-weight: 350;
     }
+    &__Btn{
+        display: flex;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 1rem;
+    }
     &__Button{
-        @include button(primary);
+        @include button(primary); 
     }
 }
 
 .steps{
-    display: flex;
-    padding: 0rem;
+    
 
     &__Title{
-     margin-top: 0;   
+        margin-left: 1.5rem;
+     margin-bottom: auto;   
     }
     &__Picks{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         padding: 0;
-        margin: 0;
         list-style: none;
         cursor: pointer;
     }
     &__Pick{
-        display: flex;
-        align-items: center;
-        width: 75%;
         padding: 2rem;
-        margin: 1rem 5rem 1rem 0.7rem;
+        margin: 1rem 1.5rem 1rem 1.5rem;
         box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.130);
         border-radius: 1.3rem;
         background-color: #f1f1f1;
+        position: relative;
     }
     &__Pick:hover{
         background-color: rgba($color: #9356DC, $alpha: 0.2);
@@ -118,7 +123,7 @@ body, html{
     }
     
     &__digit{
-        background: $color-primary;
+      background: $color-primary;
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 100px;
@@ -127,7 +132,7 @@ body, html{
       align-items: center;
       color: white;
       position: absolute;
-      left: -0.000005rem;
+      left: -10px;
     }
 }
 
@@ -202,4 +207,15 @@ body, html{
             background-color: white!important;
     }
     }
+    
+    @media (min-width:1027px){
+        .steps__Picks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }  
+            .steps__Pick{
+                padding: 2rem 5rem 2rem 5rem;
+        }
+}
     
