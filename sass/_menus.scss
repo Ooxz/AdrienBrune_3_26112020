@@ -31,6 +31,8 @@
       margin-top: -4rem; //superposition d'image
       z-index: 1;
       position: relative;
+      max-width: 1280px;
+      margin: -4rem auto 0 auto;
 
       &__Header{
           display: flex;

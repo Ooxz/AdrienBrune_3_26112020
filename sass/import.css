@@ -466,6 +466,8 @@ body, html {
   margin-top: -4rem;
   z-index: 1;
   position: relative;
+  max-width: 1280px;
+  margin: -4rem auto 0 auto;
 }
 
 .menu__Header {
