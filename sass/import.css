@@ -192,7 +192,7 @@ body, html {
 }
 
 .area__Text {
-  font-weight: 450;
+  font-weight: 400;
 }
 
 .explore {
@@ -218,7 +218,7 @@ body, html {
 .explore__Subtitle {
   margin-top: 1rem;
   margin-bottom: 3rem;
-  font-weight: 350;
+  font-weight: 300;
 }
 
 .explore__Btn {
@@ -235,7 +235,7 @@ body, html {
   border: none;
   border-radius: 95px;
   font-size: 1rem;
-  font-weight: 450;
+  font-weight: 400;
   color: white;
   padding: 0.8rem 1.6rem;
   background-color: #6e6e6e;
@@ -762,7 +762,7 @@ section {
   border: none;
   border-radius: 95px;
   font-size: 1rem;
-  font-weight: 450;
+  font-weight: 400;
   color: white;
   padding: 0.8rem 1.6rem;
   background-color: #6e6e6e;
