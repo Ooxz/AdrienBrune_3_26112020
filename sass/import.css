@@ -96,7 +96,7 @@ a {
 }
 
 .footer__Links {
-  margin: 0.6vw 0;
+  margin: 0.5rem 0;
 }
 
 .footer__Links:first-child {
@@ -192,7 +192,7 @@ body, html {
 }
 
 .area__Text {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .explore {
@@ -239,8 +239,8 @@ body, html {
   color: white;
   padding: 0.8rem 1.6rem;
   background-color: #6e6e6e;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
@@ -252,6 +252,7 @@ body, html {
 }
 
 .steps__Title {
+  margin-top: 2rem;
   margin-left: 1.5rem;
   margin-bottom: auto;
 }
@@ -276,9 +277,18 @@ body, html {
   margin: 1rem 1.5rem 1rem 1.5rem;
   -webkit-box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
           box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.13);
-  border-radius: 1.3rem;
+  border-radius: 1.7rem;
+  bottom: 1.5rem;
   background-color: #f1f1f1;
   position: relative;
+}
+
+.steps__Icon {
+  color: grey;
+}
+
+.steps__Text {
+  font-weight: 600;
 }
 
 .steps__Pick:hover {
@@ -766,8 +776,8 @@ section {
   color: white;
   padding: 0.8rem 1.6rem;
   background-color: #6e6e6e;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   cursor: pointer;
