@@ -781,6 +781,7 @@ section {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   cursor: pointer;
+  outline: none;
 }
 
 .BtnMain__Command:hover {
