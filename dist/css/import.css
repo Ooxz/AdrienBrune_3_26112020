@@ -318,7 +318,7 @@ body, html {
 .headerImg {
   width: 100%;
   min-height: 6rem;
-  max-height: 16rem;
+  max-height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
