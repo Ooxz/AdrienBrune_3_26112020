@@ -466,7 +466,10 @@ body, html {
 }
 
 .headerImg {
-  max-width: 100%;
+  width: 100%;
+  min-height: 6rem;
+  max-height: 50rem;
+  object-fit: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
